@@ -91,10 +91,7 @@ function Header() {
                 <span>Messages</span>
                 <Badge type="danger">13</Badge>
               </DropdownItem>
-              <DropdownItem tag="a" href="#" className="justify-between">
-                <span>Sales</span>
-                <Badge type="danger">2</Badge>
-              </DropdownItem>
+              
               <DropdownItem onClick={() => alert('Alerts!')}>
                 <span>Alerts</span>
               </DropdownItem>
