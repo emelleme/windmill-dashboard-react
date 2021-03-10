@@ -25,9 +25,11 @@ import { ReactComponent as MenuIcon } from './menu.svg'
 import { ReactComponent as DropdownIcon } from './dropdown.svg'
 import { ReactComponent as OutlinePersonIcon } from './outlinePerson.svg'
 import { ReactComponent as OutlineCogIcon } from './outlineCog.svg'
+import { ReactComponent as StarIcon } from './star.svg'
 import { ReactComponent as OutlineLogoutIcon } from './outlineLogout.svg'
 
 export {
+  StarIcon,
   ButtonsIcon,
   CardsIcon,
   ChartsIcon,
