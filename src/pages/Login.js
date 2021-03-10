@@ -86,7 +86,7 @@ function Login() {
                 <Input className="mt-1" type="email" onChange={(e) => setEmail(e.target.value)} placeholder="john@doe.com" />
               </Label>
 
-              <Button className="mt-4" block tag={Link} disabled={disabled} to='/#'>
+              <Button className="mt-4 text-blue-400" block tag={Link} disabled={disabled} to='/#'>
                 Log in
               </Button>
             </form>
