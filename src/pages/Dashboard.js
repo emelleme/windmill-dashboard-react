@@ -74,7 +74,7 @@ function Dashboard() {
           />
         </InfoCard>
 
-        <InfoCard title="Total Scans" value="397">
+        <InfoCard title="Total Scans" value="319">
           <RoundIcon
             icon={MoneyIcon}
             iconColorClass="text-teal-500 dark:text-teal-100"
