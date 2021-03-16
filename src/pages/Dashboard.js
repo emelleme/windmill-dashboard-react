@@ -91,13 +91,15 @@ function Dashboard() {
         </ChartCard>
       </div>
 
+      <PageTitle>Scans</PageTitle>
+
       <TableContainer>
         <Table>
           <TableHeader>
             <tr>
-              <TableCell>Client</TableCell>
-              <TableCell>Has Photo</TableCell>
-              <TableCell>Date Registered</TableCell>
+              <TableCell>Name</TableCell>
+              <TableCell>Household Size</TableCell>
+              <TableCell>Date Scanned</TableCell>
             </tr>
           </TableHeader>
           <TableBody>
@@ -105,18 +107,17 @@ function Dashboard() {
               <TableRow key={i}>
                 <TableCell>
                   <div className="flex items-center text-sm">
-                    <Avatar className="hidden mr-3 md:block" src={user.avatar} alt="User image" />
+                    <Avatar className="hidden mr-3 md:block" src="https://images.unsplash.com/photo-1502378735452-bc7d86632805?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=aa3a807e1bbdfd4364d1f449eaa96d82" alt="User image" />
                     <div>
                       <p className="font-semibold">{user.name}</p>
-                      <p className="text-xs text-gray-600 dark:text-gray-400">{user.job}</p>
                     </div>
                   </div>
                 </TableCell>
                 <TableCell>
-                  <Badge type={user.status}>{user.status}</Badge>
+                <p className="font-semibold">{user.household}</p>
                 </TableCell>
                 <TableCell>
-                  <span className="text-sm">{new Date(user.date).toLocaleDateString()}</span>
+                  <span className="text-sm">{user.datetime}</span>
                 </TableCell>
               </TableRow>
             ))}
