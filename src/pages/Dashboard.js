@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import CTA from '../components/CTA'
 import InfoCard from '../components/Cards/InfoCard'
 import ChartCard from '../components/Chart/ChartCard'
-import { Doughnut, Line } from 'react-chartjs-2'
+import { Doughnut, Line,Bar } from 'react-chartjs-2'
 import ChartLegend from '../components/Chart/ChartLegend'
 import PageTitle from '../components/Typography/PageTitle'
 import { ChatIcon, CartIcon, MoneyIcon, PeopleIcon,StarIcon } from '../icons'
@@ -56,7 +56,7 @@ function Dashboard() {
 
       {/* <!-- Cards --> */}
       <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
-        <InfoCard title="Total Registrants" value="475">
+        <InfoCard title="Total Registrants" value="656">
           <RoundIcon
             icon={PeopleIcon}
             iconColorClass="text-orange-500 dark:text-orange-100"
@@ -65,7 +65,7 @@ function Dashboard() {
           />
         </InfoCard>
 
-        <InfoCard title="New This Week" value="133">
+        <InfoCard title="New Registrants This Week" value="22">
           <RoundIcon
             icon={StarIcon}
             iconColorClass="text-blue-500 dark:text-blue-100"
@@ -74,7 +74,7 @@ function Dashboard() {
           />
         </InfoCard>
 
-        <InfoCard title="Total Scans" value="319">
+        <InfoCard title="Total Scans" value="1596">
           <RoundIcon
             icon={MoneyIcon}
             iconColorClass="text-teal-500 dark:text-teal-100"
@@ -85,8 +85,8 @@ function Dashboard() {
       </div>
       <div className="grid gap-2 mb-4 md:grid-cols-1">
 
-        <ChartCard title="Total Registrants and Scans per event">
-          <Line {...lineOptions} />
+        <ChartCard title="Total Scans per event">
+          <Bar {...lineOptions} />
           <ChartLegend legends={lineLegends} />
         </ChartCard>
       </div>

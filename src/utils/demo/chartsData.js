@@ -43,59 +43,31 @@ export const lineOptions = {
     labels: ['Dec 1st', 'Dec 8th', 'Dec 15th', 'Dec 22nd', 'Dec 29th', 'Jan 5th', 'Jan 12th', 'Jan 18th', 'Jan 26th', 'Feb 2nd', 'Feb 9th', 'Feb 16th', 'Feb 23rd', 'March 2nd', 'March 9th','March 16th','March 23rd','March 30th','April 6th','April 13th','April 20th','April 27th','May 4th','May 11th'],
     datasets: [
       {
-        label: 'Registrants',
-        /**
-         * These colors come from Tailwind CSS palette
-         * https://tailwindcss.com/docs/customizing-colors/#default-color-palette
-         */
-        backgroundColor: '#0694a2',
-        borderColor: '#0694a2',
-        data: [14, 45, 85, 106, 135, 169, 223, 247, 333, 339, 374, 374, 395, 430, 475, 72, 8, 149, 144, 151, 171, 213, 193, 122,133,0],
-        fill: false,
-      },
-      {
         label: 'Scans',
-        fill: false,
         /**
          * These colors come from Tailwind CSS palette
          * https://tailwindcss.com/docs/customizing-colors/#default-color-palette
          */
         backgroundColor: '#7e3af2',
         borderColor: '#7e3af2',
-        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 103, 0, 75, 83, 131],
+        data: [0,0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 81, 20, 72, 139, 149, 144, 151, 171, 213, 193, 122,133,0],
       },
     ],
   },
   options: {
-    responsive: true,
-    tooltips: {
-      mode: 'index',
-      intersect: false,
-    },
-    hover: {
-      mode: 'nearest',
-      intersect: true,
-    },
     scales: {
-      x: {
-        display: true,
-        scaleLabel: {
-          display: true,
-          labelString: 'Month',
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
         },
-      },
-      y: {
-        display: true,
-        scaleLabel: {
-          display: true,
-          labelString: 'Value',
-        },
-      },
+      ],
     },
   },
   legend: {
     display: false,
-  },
+  }
 }
 
 export const barOptions = {
