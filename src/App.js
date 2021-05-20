@@ -18,7 +18,7 @@ const Callback = lazy(() => import('./pages/Callback'))
 
 function App() {
   // Create a hook to check whether or not user has lifetime acess
-  const [lifetimeAccess, setLifetimeAccess] = useState(false);
+  const [lifetimeAccess, setLifetimeAccess] = useState(true);
 
   // Create a hook to prevent infinite loop in useEffect inside of /components/premium-content
   const [
@@ -32,9 +32,10 @@ function App() {
   // Otherwise, set it to {user: null}
   useEffect(() => {
     setUser({ loading: true });
-    magic.user.isLoggedIn().then(isLoggedIn => {
-      return isLoggedIn ? magic.user.getMetadata().then(userData => setUser(userData)) : setUser({ user: null });
-    });
+    setUser({ user: null })
+    // magic.user.isLoggedIn().then(isLoggedIn => {
+    //   return isLoggedIn ? magic.user.getMetadata().then(userData => setUser(userData)) : setUser({ user: null });
+    // });
   }, []);
 
   return (
