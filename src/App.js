@@ -3,7 +3,7 @@ import { UserContext } from "./lib/UserContext";
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import AccessibleNavigationAnnouncer from './components/AccessibleNavigationAnnouncer'
 // Import Magic-related things
-import { magic } from "./lib/magic";
+// import { magic } from "./lib/magic";
 
 const Layout = lazy(() => import('./containers/Layout'))
 const Login = lazy(() => import('./pages/Login'))
