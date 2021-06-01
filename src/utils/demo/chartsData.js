@@ -40,7 +40,7 @@ export const doughnutOptions = {
 
 export const lineOptions = {
   data: {
-    labels: ['Dec 1st', 'Dec 8th', 'Dec 15th', 'Dec 22nd', 'Dec 29th', 'Jan 5th', 'Jan 12th', 'Jan 18th', 'Jan 26th', 'Feb 2nd', 'Feb 9th', 'Feb 16th', 'Feb 23rd', 'March 2nd', 'March 9th','March 16th','March 23rd','March 30th','April 6th','April 13th','April 20th','April 27th','May 4th','May 11th','May 18'],
+    labels: ['Dec 1st', 'Dec 8th', 'Dec 15th', 'Dec 22nd', 'Dec 29th', 'Jan 5th', 'Jan 12th', 'Jan 18th', 'Jan 26th', 'Feb 2nd', 'Feb 9th', 'Feb 16th', 'Feb 23rd', 'March 2nd', 'March 9th','March 16th','March 23rd','March 30th','April 6th','April 13th','April 20th','April 27th','May 4th','May 11th','May 18','May 25','June 1st'],
     datasets: [
       {
         label: 'Scans',
@@ -50,7 +50,7 @@ export const lineOptions = {
          */
         backgroundColor: '#7e3af2',
         borderColor: '#7e3af2',
-        data: [0,0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 81, 20, 72, 139, 149, 144, 151, 171, 213, 193, 122,133,191,210],
+        data: [0,0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 81, 20, 72, 139, 149, 144, 151, 171, 213, 193, 122,133,191,210,172,0],
       },
     ],
   },
