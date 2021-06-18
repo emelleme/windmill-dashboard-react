@@ -56,7 +56,7 @@ function Dashboard() {
 
       {/* <!-- Cards --> */}
       <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
-        <InfoCard title="Total Registrants" value="668">
+        <InfoCard title="Total Registrants" value="690">
           <RoundIcon
             icon={PeopleIcon}
             iconColorClass="text-orange-500 dark:text-orange-100"
@@ -65,7 +65,7 @@ function Dashboard() {
           />
         </InfoCard>
 
-        <InfoCard title="New Registrants This Week" value="5">
+        <InfoCard title="New Registrants This Week" value="6">
           <RoundIcon
             icon={StarIcon}
             iconColorClass="text-blue-500 dark:text-blue-100"
